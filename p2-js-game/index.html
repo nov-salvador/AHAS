@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/icons/snake.png" type="x-icon">
+  <title>AHAS</title>
+  <script src="titleMenu.js" defer></script>
+  <script src="instruction.js" defer type="module"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+</head>
+
+<body>
+  <!-- Audio -->
+  <audio src="./assets/sounds/title-menu-sound.mp3" loop = 'loop' id="title-menu-sound"></audio>
+  <audio src="./assets/sounds/normal-sound.mp3" loop = 'loop' id="normal-sound"></audio>
+  <audio src="./assets/sounds/normal-click-sound.mp3" id="normal-click-sound"></audio>
+  <audio src="./assets/sounds/instruction-sound.mp3" loop = 'loop' id="instruction-sound"></audio>
+  <audio src="./assets/sounds/game-over-sound.mp3" id="game-over-sound"></audio>
+  <audio src="./assets/sounds/game-mode-sound.mp3" loop = 'loop' id="game-mode-sound"></audio>
+  <audio src="./assets/sounds/food-eaten-sound.mp3" id="food-eaten-sound"></audio>
+  <audio src="./assets/sounds/cobra-sound.mp3" loop = 'loop' id="cobra-sound"></audio>
+  <audio src="./assets/sounds/cobra-click-sound.mp3" id="cobra-click-sound"></audio>
+  <!-- main menu -->
+  <div class="title-menu">
+    <div class="title-grid">
+      <div class="letter-A">A</div>
+      <div class="letter-H">H</div>
+      <div class="letter-A2">A</div>
+      <div class="letter-S">S</div>
+      <div class="snake-head"></div>
+    </div>
+    <div class="start-menu">
+      <button class="btn-start-game" type="button">
+        <div class="start-game-container">
+          <div class="start-game-letter-S">S</div>
+          <div class="start-game-letter-T">T</div>
+          <div class="start-game-letter-A">A</div>
+          <div class="start-game-letter-R">R</div>
+          <div class="start-game-letter-T2">T</div>
+          <div class="start-game-letter"></div>
+          <div class="start-game-letter-G">G</div>
+          <div class="start-game-letter-A2">A</div>
+          <div class="start-game-letter-M">M</div>
+          <div class="start-game-letter-E">E</div>
+        </div>
+      </button>
+      <button class="btn-how-to-play" type="button">
+        <div class="how-to-play-container">
+          <div class="start-game-letter-H">H</div>
+          <div class="start-game-letter-O">O</div>
+          <div class="start-game-letter-W">W</div>
+          <div class="start-game-letter"></div>
+          <div class="start-game-letter-T">T</div>
+          <div class="start-game-letter-O">O</div>
+          <div class="start-game-letter"></div>
+          <div class="start-game-letter-P">P</div>
+          <div class="start-game-letter-L">L</div>
+          <div class="start-game-letter-A">A</div>
+          <div class="start-game-letter-Y">Y</div>
+        </div>
+      </button>
+    </div>
+    <dialog class="H-T-P-instruction">
+      <p>Move the snake using arrow keys in the keyboard</p>
+      <i class="fa fa-close close-instruction" type="button"></i>
+    </dialog>
+    <dialog class="game-mode">
+      <p>select game mode</p>
+      <div class="normal-mode">
+        <button class="btn-normal-mode" type="button">Earthworm</button>
+        <p>it's just a normal game</p>
+      </div>
+      <div class="cobra-mode">
+        <button class="btn-cobra-mode" type="button">Cobra</button>
+        <p>it's not just a normal game</p>
+      </div>
+      <i class="fa fa-close close-game-mode" type="button"></i>
+    </dialog>
+    <i class="fa fa-volume-up" type="button" id="play-audio"></i>
+    <i class="fa fa-volume-off" type="button" id="off-audio"></i>
+  </div>
+
+  <!-- game screen -->
+  <div class="game-block">
+    <div class="game-screen"></div>
+  </div>
+  <div class="game-controls">
+    <!-- <div class="direction-btn"></div> -->
+    <div class="score-container">
+      <div>Score:</div>
+      <div class="score">0</div>
+    </div>
+    <div class="restart-home">
+      <button class="restart-game" type="button">Retry</button>
+      <button class="return-home" type="button">Home</button>
+      <i class="fa fa-volume-up" type="button" id="play-game-audio"></i>
+      <i class="fa fa-volume-off" type="button" id="off-game-audio"></i>
+    </div>
+    <div class="pop-dialog"></div>
+    
+  </div>
+  <div class="game-over-pop">Game Over!</div>
+  
+</body>
+
+</html>

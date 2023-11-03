@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiko&family=Creepster&family=Inder&family=Kenia&family=Pacifico&display:wght@800&display=swap');
+
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-grid {
+  position: relative;
+  top: 80px;
+  width: 400px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  margin: 0 auto;
+}
+
+.letter-A,
+.letter-H,
+.letter-A2,
+.letter-S {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 95px;
+  color: black;
+  font-family: 'creepster', sans-serif ;
+}
+
+.letter-A {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  background-color: #61A0AF;
+}
+
+.letter-H {
+  grid-column-start: 1;
+  grid-row-start: 3;
+  background-color: #96C9DC;
+}
+
+.letter-A2 {
+  grid-column-start: 4;
+  grid-row-start: 4;
+  background-color: #F9B9B7;
+}
+
+.letter-S {
+  grid-column-start: 3;
+  grid-row-start: 2;
+  background-color: #F5D491;
+}
+
+.snake-head {
+  /* grid-column-start: 4;
+  grid-row-start: 1; */
+  background-color: #FBAF00;
+  border-radius: 30%;
+}
+
+.start-menu {
+  position: relative;
+  top: -70px;
+  /* border: 2px solid black; */
+  display: none;
+  row-gap: 50px;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  margin: 0 auto;
+}
+
+.btn-start-game, .btn-how-to-play {
+  display: flex;
+  justify-content: center;
+  width: min-content;
+  padding: 0;
+}
+
+.start-game-container,
+.how-to-play-container {
+  display: flex;
+  justify-content: center;
+  /* width: 350px; */
+  /* border: 1px solid black; */
+  
+}
+
+.start-game-letter-S,
+.start-game-letter-E,
+.start-game-letter-R,
+.start-game-letter-G,
+.start-game-letter-T,
+.start-game-letter-A,
+.start-game-letter-A2,
+.start-game-letter-T2,
+.start-game-letter-M,
+.start-game-letter,
+.start-game-letter-H,
+.start-game-letter-P,
+.start-game-letter-Y,
+.start-game-letter-O,
+.start-game-letter-W,
+.start-game-letter-L {
+  font-size: 30px;
+  color: black;
+  width: 40px;
+  font-weight: 800;
+}
+.start-game-letter-S,
+.start-game-letter-E,
+.start-game-letter-R {
+  background-color: #f28444;
+}
+.start-game-letter-G,
+.start-game-letter-T {
+  background-color: #61A0AF;
+}
+.start-game-letter-A,
+.start-game-letter-A2{
+  background-color: #f2d479;
+}
+.start-game-letter{
+  background-color: #aba499;
+}
+.start-game-letter-T2,
+.start-game-letter-M {
+  background-color: #F9B9B7;
+}
+.start-game-letter-H,
+.start-game-letter-P,
+.start-game-letter-Y {
+  background-color: #96C9DC;
+}
+.start-game-letter-O {
+  background-color: #F9B9B7;
+}
+.start-game-letter-W,
+.start-game-letter-L {
+  background-color: #f28444;
+}
+button, i{
+  cursor: grab;
+}
+.H-T-P-instruction{
+  border: 0;
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+}
+.H-T-P-instruction::backdrop{
+  backdrop-filter: blur(10px);
+}
+
+.H-T-P-instruction {
+  font-family: 'kenia';
+  color: #F9B9B7;
+  font-size: 35px;
+  /* font-weight: 900; */
+  text-align: center;
+  -webkit-text-stroke: .5px grey;
+}
+
+.H-T-P-instruction i, .game-mode i {
+  font-size: 36px;
+  color: rgb(8, 127, 148);
+  -webkit-text-stroke: 2px grey;
+}
+.game-mode{
+  border: 0;
+  background-color: transparent;
+  text-align: center;
+}
+.game-mode::backdrop{
+  backdrop-filter: blur(10px);
+}
+#play-audio, #off-audio{
+  color: #61A0AF;
+  font-size: 40px;
+  position: absolute;
+  top: 80%;
+  left: 48%;
+}
+#play-game-audio, #off-game-audio{
+  color: #aba499;
+  font-size: 40px;
+  position: absolute;
+  /* margin-top: 0; */
+  top: 93%;
+  left: 48%;
+  /* display: none; */
+}
+#off-game-audio{
+  display: none;
+  /* left: 60%; */
+}
+#play-audio{
+  display: none;
+  /* left: 60%; */
+}
+.btn-normal-mode, .btn-cobra-mode{
+  background-color: transparent;
+  border: 0;
+}
+.close-game-mode{
+  border: 0;
+}
+.game-mode > p, dialog > div > button {
+  font-family: 'creepster';
+  font-size: 35px;
+  color: #F9B9B7;
+  -webkit-text-stroke: .5px grey
+}
+dialog > div > button{
+  color: #aba499;
+}
+.normal-mode > p, .cobra-mode > p{
+  color: #96C9DC;
+  margin-top: 0;
+  font-family: 'kenia';
+  font-size: 20px;
+}
+.btn-normal-mode:hover, .btn-cobra-mode:hover{
+  animation: scale .5s linear forwards;
+}
+.close-game-mode:hover, .close-instruction:hover{
+  animation: scale 200ms linear forwards;
+}
+@keyframes scale {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.3;  
+  }
+  100% {
+    scale: 1.5;
+  }
+}
+
+.game-block {
+  display: none;
+  position: relative;
+  top: 50px;
+  /* visibility: hidden; */
+  border: 5px solid black;
+  /* min-height: 290px; */
+  height: 80vmin;
+  width: 80vmin;
+  /* min-width: 290px; */
+  justify-content: center;
+  /* flex-direction: column */
+}
+.game-screen {
+  border: 3px solid rgb(165, 165, 201);
+  background-color: #4b4e57;
+  height: 100;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: repeat(21, 1fr);
+  grid-template-columns: repeat(21, 1fr);
+}
+.restart-home{
+  display: none;
+  /* position: relative;
+  top: 350px; */
+}
+.return-home, .restart-game{
+  font-family: 'kenia';
+  font-size: 30px;
+  cursor: grab;
+  border: 0;
+  color: #f28444;
+  background-color: transparent;
+  position: absolute;
+}
+.restart-game{
+  top: 580px;
+  left: 400px;
+}
+.return-home{
+  top: 580px;
+  left: 830px;
+}
+.restart-game:hover{
+  color: black;
+  background-color: #f28444;
+  border-radius: 10px;
+}
+.return-home:hover{
+  color: black;
+  background-color: #f28444;
+  border-radius: 10px;
+}
+.score-container {
+  position: absolute;
+  top: 10px;
+  left: 30%;
+  display: none;
+  color: #F9B9B7;
+  font-family: 'kenia', sans-serif;
+  font-size: 40px;
+}
+.pop-dialog{
+  display: none;
+  width: 200px;
+  position: absolute;
+  top: 30%;
+  right: 150px;
+  color: #96C9DC;
+  font-family:'pacifico';
+  font-size: 20px;
+}
+
+.game-over-pop{
+  font-family: 'kenia';
+  font-size: 100px;
+  color: blueviolet;
+  display: none;
+  position: absolute;
+}
+.snake {
+  background-color: #f28444;
+  border-radius: 2px;
+}
+
+.food {
+  background-color: #f2d479;
+  border-radius: 50%;
+}
