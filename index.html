@@ -24,6 +24,7 @@
   <audio src="./assets/sounds/food-eaten-sound.mp3" id="food-eaten-sound"></audio>
   <audio src="./assets/sounds/cobra-sound.mp3" loop = 'loop' id="cobra-sound"></audio>
   <audio src="./assets/sounds/cobra-click-sound.mp3" id="cobra-click-sound"></audio>
+
   <!-- main menu -->
   <div class="title-menu">
     <div class="title-grid">
@@ -85,23 +86,23 @@
   </div>
 
   <!-- game screen -->
-  <div class="game-block">
-    <div class="game-screen"></div>
-  </div>
-  <div class="game-controls">
-    <!-- <div class="direction-btn"></div> -->
-    <div class="score-container">
-      <div>Score:</div>
-      <div class="score">0</div>
+  <div class="fullscreen">
+    <div class="game-block">
+      <div class="game-screen"></div>
     </div>
-    <div class="restart-home">
-      <button class="restart-game" type="button">Retry</button>
-      <button class="return-home" type="button">Home</button>
-      <i class="fa fa-volume-up" type="button" id="play-game-audio"></i>
-      <i class="fa fa-volume-off" type="button" id="off-game-audio"></i>
+    <div class="game-controls">
+      <div class="score-container">
+        <div>Score:</div>
+        <div class="score">0</div>
+      </div>
+      <div class="restart-home">
+        <button class="restart-game" type="button">Retry</button>
+        <i class="fa fa-volume-up" type="button" id="play-game-audio"></i>
+        <i class="fa fa-volume-off" type="button" id="off-game-audio"></i>
+        <button class="return-home" type="button">Home</button>
+      </div>
+      <div class="pop-dialog"></div>
     </div>
-    <div class="pop-dialog"></div>
-    
   </div>
   <div class="game-over-pop">Game Over!</div>
   

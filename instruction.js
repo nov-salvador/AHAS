@@ -13,6 +13,7 @@ const gameBlock = document.querySelector('.game-block')
 const returnHome = document.querySelector('.return-home')
 const restartHome = document.querySelector('.restart-home')
 const scoreContainer = document.querySelector('.score-container')
+const fullscreen = document.querySelector('.fullscreen')
 
 export const popDialog = document.querySelector('.pop-dialog')
 const btnPlayTitleAudio = document.getElementById('play-audio')
@@ -52,6 +53,7 @@ btnNormalMode.addEventListener('click', () => {
     gameBlock.style.display = 'flex'
     restartHome.style.display = 'flex'
     scoreContainer.style.display = 'flex'
+    fullscreen.style.display = 'block'
   }, 800)
   popDialog.style.display = 'block'
   normalClickAudio.play()
@@ -73,6 +75,7 @@ btnCobraMode.addEventListener('click', () => {
     gameBlock.style.display = 'flex'
     restartHome.style.display = 'flex'
     scoreContainer.style.display = 'flex'
+    fullscreen.style.display = 'block'
   }, 800)
   popDialog.style.display = 'block'
   gameModeAudio.pause()

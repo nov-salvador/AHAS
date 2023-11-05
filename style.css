@@ -181,17 +181,17 @@ button, i{
 #play-audio, #off-audio{
   color: #61A0AF;
   font-size: 40px;
-  position: absolute;
+  position: relative;
   top: 80%;
   left: 48%;
 }
 #play-game-audio, #off-game-audio{
   color: #aba499;
   font-size: 40px;
-  position: absolute;
+  position: relative;
   /* margin-top: 0; */
-  top: 93%;
-  left: 48%;
+  /* top: 93%; */
+  /* left: 48%; */
   /* display: none; */
 }
 #off-game-audio{
@@ -242,32 +242,40 @@ dialog > div > button{
   }
 }
 
+.fullscreen{
+  display: none;
+  position: relative;
+  width: 100vmin;
+  height: 97vmin;
+  margin: 0 auto;
+}
 .game-block {
+  /* aspect-ratio: 1 / 1; */
   display: none;
   position: relative;
   top: 50px;
-  /* visibility: hidden; */
-  border: 5px solid black;
-  /* min-height: 290px; */
-  height: 80vmin;
-  width: 80vmin;
+  /* min-height: 50%; */
+  height: 70vmin;
+  width: 70vmin;
   /* min-width: 290px; */
-  justify-content: center;
-  /* flex-direction: column */
+  /* justify-content: center; */
+  margin: 0 auto;
 }
 .game-screen {
   border: 3px solid rgb(165, 165, 201);
   background-color: #4b4e57;
-  height: 100;
-  width: 100vw;
+  height: 100%;
+  width: 100%; 
   display: grid;
   grid-template-rows: repeat(21, 1fr);
   grid-template-columns: repeat(21, 1fr);
 }
 .restart-home{
   display: none;
-  /* position: relative;
-  top: 350px; */
+  margin-top: 12%;
+  margin: 12% auto 0 auto ;
+  width: 70vmin;
+  justify-content: space-between;
 }
 .return-home, .restart-game{
   font-family: 'kenia';
@@ -276,16 +284,9 @@ dialog > div > button{
   border: 0;
   color: #f28444;
   background-color: transparent;
-  position: absolute;
+  position: relative;
 }
-.restart-game{
-  top: 580px;
-  left: 400px;
-}
-.return-home{
-  top: 580px;
-  left: 830px;
-}
+
 .restart-game:hover{
   color: black;
   background-color: #f28444;
@@ -307,21 +308,22 @@ dialog > div > button{
 }
 .pop-dialog{
   display: none;
-  width: 200px;
+  width: 50%;
   position: absolute;
   top: 30%;
-  right: 150px;
+  right: 25%;
   color: #96C9DC;
   font-family:'pacifico';
-  font-size: 20px;
+  font-size: 3vmin;
 }
 
 .game-over-pop{
   font-family: 'kenia';
-  font-size: 100px;
+  font-size: 15vmin;
   color: blueviolet;
   display: none;
   position: absolute;
+  /* width: 50%; */
 }
 .snake {
   background-color: #f28444;
