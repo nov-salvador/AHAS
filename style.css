@@ -272,8 +272,7 @@ dialog > div > button{
 }
 .restart-home{
   display: none;
-  margin-top: 12%;
-  margin: 12% auto 0 auto ;
+  margin: 65px auto 0 auto ;
   width: 70vmin;
   justify-content: space-between;
 }
