@@ -6,12 +6,15 @@ body {
   justify-content: center;
   align-items: center;
 }
+.title-menu{
+  text-align: center;
+}
 
 .title-grid {
   position: relative;
   top: 80px;
-  width: 400px;
-  height: 400px;
+  width: 80vmin;
+  height: 80vmin;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
@@ -64,30 +67,34 @@ body {
 
 .start-menu {
   position: relative;
-  top: -70px;
-  /* border: 2px solid black; */
+  /* min-width: 300px; */
+  width: 95vmin;
   display: none;
   row-gap: 50px;
+  /* justify-items: center; */
   flex-direction: column;
   align-items: center;
   z-index: 1;
   margin: 0 auto;
+  margin-top: -14%;
 }
 
 .btn-start-game, .btn-how-to-play {
+  border: 0;
+  background-color: transparent;
   display: flex;
   justify-content: center;
-  width: min-content;
+  width: 100%;
   padding: 0;
 }
-
 .start-game-container,
 .how-to-play-container {
   display: flex;
   justify-content: center;
-  /* width: 350px; */
-  /* border: 1px solid black; */
-  
+  width: 80%;
+}
+.how-to-play-container{
+  width: 90%;
 }
 
 .start-game-letter-S,
@@ -181,9 +188,10 @@ button, i{
 #play-audio, #off-audio{
   color: #61A0AF;
   font-size: 40px;
-  position: relative;
-  top: 80%;
+  /* position: relative; */
+  top: 95%; 
   left: 48%;
+  margin: 25px auto;
 }
 #play-game-audio, #off-game-audio{
   color: #aba499;
