@@ -33,7 +33,20 @@ body {
   color: black;
   font-family: 'creepster', sans-serif ;
 }
-
+.letter-none{
+  grid-column-start: 2;
+  grid-row-start: 3;
+  background-color: transparent;
+  font-size: 95px;
+  color: transparent;
+}
+.letter-none2{
+  grid-column-start: 1;
+  grid-row-start: 1;
+  background-color: tra;
+  font-size: 95px;
+  color: transparent;
+}
 .letter-A {
   grid-column-start: 1;
   grid-row-start: 1;
@@ -362,9 +375,9 @@ dialog > div > button{
   grid-row-start: 2;
   
 }
-#btn-direction-up:active, #btn-direction-right:active, #btn-direction-down:active, #btn-direction-left:active{
+/* #btn-direction-up:active, #btn-direction-right:active, #btn-direction-down:active, #btn-direction-left:active{
   scale: .6;
-}
+} */
 @media (max-width: 768px) {
   .btn-direction-container{
     display: grid;

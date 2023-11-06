@@ -97,24 +97,32 @@ let lastDirection = { x: 0, y: 0 }
 function changeDirection(event){
   switch (event.key) {
     case 'ArrowUp':
+      btnDirectionUp.style.scale = '.6'
+      setTimeout(()=>btnDirectionUp.style.scale = '1', 100)
       if (lastDirection.y !== 0) {
         break
       }
       direction = { x: 0, y: -1 }
       break
     case 'ArrowDown':
+      btnDirectionDown.style.scale = '.6'
+      setTimeout(()=>btnDirectionDown.style.scale = '1', 100)
       if (lastDirection.y !== 0) {
         break
       }
       direction = { x: 0, y: 1 }
       break
     case 'ArrowRight':
+      btnDirectionRight.style.scale = '.6'
+      setTimeout(()=>btnDirectionRight.style.scale = '1', 100)
       if (lastDirection.x !== 0) {
         break
       }
       direction = { x: 1, y: 0 }
       break
     case 'ArrowLeft':
+      btnDirectionLeft.style.scale = '.6'
+      setTimeout(()=>btnDirectionLeft.style.scale = '1', 100)
       if (lastDirection.x !== 0) {
         break
       }
@@ -126,7 +134,10 @@ window.addEventListener('keydown', changeDirection)
 
           //Controls for none desktop
 const directionControl = document.querySelectorAll('.btn-direction-container i')
-
+const btnDirectionUp = document.getElementById('btn-direction-up') 
+const btnDirectionRight = document.getElementById('btn-direction-right') 
+const btnDirectionDown = document.getElementById('btn-direction-down') 
+const btnDirectionLeft = document.getElementById('btn-direction-left') 
 directionControl.forEach(key => {
   key.addEventListener('click', () => changeDirection({key: key.dataset.key}))
 })
