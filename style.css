@@ -335,7 +335,6 @@ dialog > div > button{
   margin: 50px auto 0 auto;
   /* text-align: center; */
   color: #f28444;
-  border: 2px solid blue;
   font-size: 15vmin;
   display: none;
   width: 50vmin;
