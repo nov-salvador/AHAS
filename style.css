@@ -383,6 +383,11 @@ dialog > div > button{
     display: grid;
   }
 }
+.footer{
+  position: absolute;
+  color: white;
+  top: 150%;
+}
 .snake {
   background-color: #f28444;
   border-radius: 2px;
