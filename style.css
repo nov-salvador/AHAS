@@ -375,9 +375,9 @@ dialog > div > button{
   grid-row-start: 2;
   
 }
-/* #btn-direction-up:active, #btn-direction-right:active, #btn-direction-down:active, #btn-direction-left:active{
-  scale: .6;
-} */
+#btn-direction-up:active, #btn-direction-right:active, #btn-direction-down:active, #btn-direction-left:active{
+  font-size: 10vmin;
+}
 @media (max-width: 768px) {
   .btn-direction-container{
     display: grid;

@@ -97,32 +97,32 @@ let lastDirection = { x: 0, y: 0 }
 function changeDirection(event){
   switch (event.key) {
     case 'ArrowUp':
-      btnDirectionUp.style.fontSize = '10vmin'
-      setTimeout(()=>btnDirectionUp.style.fontSize = '15vmin', 100)
+      // btnDirectionUp.style.fontSize = '10vmin'
+      // setTimeout(()=>btnDirectionUp.style.fontSize = '15vmin', 100)
       if (lastDirection.y !== 0) {
         break
       }
       direction = { x: 0, y: -1 }
       break
     case 'ArrowDown':
-      btnDirectionDown.style.scale = '.6'
-      setTimeout(()=>btnDirectionDown.style.scale = '1', 100)
+      // btnDirectionDown.style.scale = '.6'
+      // setTimeout(()=>btnDirectionDown.style.scale = '1', 100)
       if (lastDirection.y !== 0) {
         break
       }
       direction = { x: 0, y: 1 }
       break
     case 'ArrowRight':
-      btnDirectionRight.style.scale = '.6'
-      setTimeout(()=>btnDirectionRight.style.scale = '1', 100)
+      // btnDirectionRight.style.scale = '.6'
+      // setTimeout(()=>btnDirectionRight.style.scale = '1', 100)
       if (lastDirection.x !== 0) {
         break
       }
       direction = { x: 1, y: 0 }
       break
     case 'ArrowLeft':
-      btnDirectionLeft.style.scale = '.6'
-      setTimeout(()=>btnDirectionLeft.style.scale = '1', 100)
+      // btnDirectionLeft.style.scale = '.6'
+      // setTimeout(()=>btnDirectionLeft.style.scale = '1', 100)
       if (lastDirection.x !== 0) {
         break
       }
