@@ -333,31 +333,35 @@ dialog > div > button{
 }
 .btn-direction-container{
   margin: 50px auto 0 auto;
-  text-align: center;
+  /* text-align: center; */
   color: #f28444;
   border: 2px solid blue;
   font-size: 15vmin;
   display: none;
-  width: 45vmin;
-  height: 45vmin;
+  width: 50vmin;
+  height: 50vmin;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
 }
 #btn-direction-up{
   grid-column-start: 2;
   grid-row-start: 1;
+  text-align: center;
 }
 #btn-direction-right{
   grid-column-start: 3;
   grid-row-start: 2;
+  text-align: right;
 }
 #btn-direction-down{
   grid-column-start: 2;
   grid-row-start: 3;
+  text-align: center;
 }
 #btn-direction-left{
   grid-column-start: 1;
   grid-row-start: 2;
+  
 }
 #btn-direction-up:active, #btn-direction-right:active, #btn-direction-down:active, #btn-direction-left:active{
   scale: .6;
