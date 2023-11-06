@@ -94,7 +94,7 @@ function snake(gameScreen) {
 //SNAKE.for moving the snake
 let direction = { x: 0, y: 0 }
 let lastDirection = { x: 0, y: 0 }
-window.addEventListener('keydown', event => {
+function changeDirection(event){
   switch (event.key) {
     case 'ArrowUp':
       if (lastDirection.y !== 0) {
@@ -121,7 +121,17 @@ window.addEventListener('keydown', event => {
       direction = { x: -1, y: 0 }
       break
   }
+}
+window.addEventListener('keydown', changeDirection)
+
+          //Controls for none desktop
+const directionControl = document.querySelectorAll('.btn-direction-container i')
+
+directionControl.forEach(key => {
+  key.addEventListener('click', () => changeDirection({key: key.dataset.key}))
 })
+
+
 function snakeMovement() {
   const inputDirection = forInputDirection()
   for (let i = snakeBody.length - 2; i >= 0; i--) {
@@ -345,4 +355,7 @@ function showQuote() {
     popDialog.innerHTML = dialog10
   }
 }
+
+
+
 
