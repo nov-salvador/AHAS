@@ -385,6 +385,7 @@ dialog > div > button{
 }
 .footer{
   position: absolute;
+  font-size: 14px;
   color: white;
   top: 150%;
 }
