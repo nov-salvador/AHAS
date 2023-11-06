@@ -97,8 +97,8 @@ let lastDirection = { x: 0, y: 0 }
 function changeDirection(event){
   switch (event.key) {
     case 'ArrowUp':
-      btnDirectionUp.style.scale = '.6'
-      setTimeout(()=>btnDirectionUp.style.scale = '1', 100)
+      btnDirectionUp.style.fontSize = '10vmin'
+      setTimeout(()=>btnDirectionUp.style.fontSize = '15vmin', 100)
       if (lastDirection.y !== 0) {
         break
       }
